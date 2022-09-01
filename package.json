@@ -12,12 +12,14 @@
     "@chakra-ui/react": "^2.3.1",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@tanem/react-nprogress": "^5.0.12",
     "framer-motion": "^7.2.1",
     "next": "12.2.5",
     "nookies": "^2.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "zustand": "^4.1.1"
   },
   "devDependencies": {
     "@types/node": "^18.7.14",
