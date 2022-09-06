@@ -1,17 +1,15 @@
 import {
   Box,
   Button,
-  Stack,
-  VStack,
+  Center,
   FormControl,
   FormLabel,
-  useColorModeValue,
   Input,
-  Checkbox,
-  Link,
-  Center,
+  Stack,
+  useColorModeValue,
+  VStack,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 
 export type LoginFormProps = {
   login: string;
@@ -36,7 +34,8 @@ const Login: React.FC = () => {
             background="backgroundActiveCardsFaceAttributes"
             boxShadow={"lg"}
             p={4}
-            boxSize="350px"
+            w="350px"
+            height={["250px", "300px", "350px", "350px", "350px"]}
           ></Box>
           <Box
             borderRadius={[
@@ -48,8 +47,9 @@ const Login: React.FC = () => {
             ]}
             bg={useColorModeValue("white", "gray.800")}
             boxShadow={"lg"}
-            p={4}
-            boxSize="350px"
+            p={[0,3,4,4,4]}
+            w="350px"
+            height={["300px", "300px", "350px", "350px", "350px"]}
           >
             <Center w="100%" height="100%" padding={10}>
               <VStack w="100%" height="100%">
@@ -66,10 +66,10 @@ const Login: React.FC = () => {
                   <Button
                     mt={5}
                     w="100%"
-                    bg={"backgroundActiveCardsFaceAttributes"}
+                    bg="backgroundActiveButton"
                     color={"white"}
                     _hover={{
-                      bg: "blue.500",
+                      bg: "backgroundHoverButton",
                     }}
                   >
                     ENTRAR

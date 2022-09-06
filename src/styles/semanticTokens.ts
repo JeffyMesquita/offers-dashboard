@@ -26,7 +26,7 @@ export const semanticTokens = {
     },
     backgroundBody: {
       default:
-        "linear-gradient(76.84deg, rgba(14, 18, 46, 0.4) 4.66%, rgba(15, 26, 48, 0.4) 30.35%, rgba(33, 51, 86, 0.4) 51.83%, rgba(1, 66, 74, 0.4) 75.18%, rgba(0, 54, 85, 0.4) 94.33%), linear-gradient(252.12deg, rgba(0, 7, 168, 0.8) 4.9%, rgba(1, 57, 109, 0.8) 46.81%, rgba(0, 24, 111, 0.8) 90.5%), linear-gradient(126.49deg, #0400BA 11.33%, #4233E8 36.19%, #080153 59.43%, #090072 85.91%);",
+        "linear-gradient(76.84deg, #0e122e66 4.66%, #0f1a3066 30.35%, #21335666 51.83%, #21335666 75.18%, #00365566 94.33%), linear-gradient(252.12deg, #0007a8cc 4.9%, #0139a9cc 46.81%, #00186fcc 90.5%), linear-gradient(126.49deg, #0400BA 11.33%, #4233E8 36.19%, #080153 59.43%, #090072 85.91%);",
       _dark: "#F0F4F8",
     },
     backgroundCard: {
@@ -126,8 +126,24 @@ export const semanticTokens = {
       default: "#15224d",
       _dark: "#d8dfe6",
     },
+    backgroundSimpleBox: {
+      default: "#034AA6",
+      _dark: "#d8dfe6",
+    },
+    backgroundSimpleBoxVariant: {
+      default: "#0460D9",
+      _dark: "#d8dfe6",
+    },
+    backgroundActiveButton: {
+      default: "#0455BF",
+      _dark: "#00000099",
+    },
+    backgroundHoverButton: {
+      default: "#0583F2",
+      _dark: "#00000099",
+    },
     backgroundActiveCardsFaceAttributes: {
-      default: "#182b6b",
+      default: "#034AA6",
       _dark: "#d8dfe6",
     },
     hoverBackgroundCardsFaceAttributes: {
