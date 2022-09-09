@@ -6,6 +6,7 @@ import Head from "next/head";
 import { useProgressStore } from "../store";
 import { Progress } from "../components/ProgressPage/Progress";
 import { theme } from "../styles/theme";
+import { AuthProvider } from "../context/AuthContect";
 
 const MyApp: React.FC<any> = ({ Component, pageProps }) => {
   const setIsAnimating = useProgressStore((state) => state.setIsAnimating);
@@ -44,8 +45,10 @@ const MyApp: React.FC<any> = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <Progress isAnimating={isAnimating} />
-      <Component {...pageProps} />
+      <AuthProvider>
+        <Progress isAnimating={isAnimating} />
+        <Component {...pageProps} />
+      </AuthProvider>
     </ChakraProvider>
   );
 };
